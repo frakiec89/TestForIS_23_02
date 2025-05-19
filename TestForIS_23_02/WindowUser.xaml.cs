@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using TestForIS_23_02.DB;
-
+// track
 namespace TestForIS_23_02
 {
     /// <summary>
@@ -36,7 +36,6 @@ namespace TestForIS_23_02
         }
     }
 
-
     public class WindowUserChange : WindowUser
     {
         public WindowUserChange(User user)
@@ -63,6 +62,5 @@ namespace TestForIS_23_02
                 DialogResult = false;
             }
         }
-
     }
 }

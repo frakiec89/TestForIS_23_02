@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using TestForIS_23_02.DB;
-
+// track
 namespace TestForIS_23_02
 {
     /// <summary>
@@ -20,7 +20,7 @@ namespace TestForIS_23_02
         {
             try
             {
-                DB.DB_Context b_Context = new DB_Context();
+                DB_Context b_Context = new DB_Context();
                 listContent.ItemsSource = null; // грубо 
                 listContent.ItemsSource = b_Context.Users.ToList();
             }
@@ -36,11 +36,9 @@ namespace TestForIS_23_02
             var b = (Button)sender;
             var us = (User)b.DataContext;
 
-
             WindowUserChange user = new WindowUserChange(us);
 
-            if (user.ShowDialog() == true)
-                MessageBox.Show("Успешно!");
+            user.ShowDialog();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
@@ -57,10 +55,9 @@ namespace TestForIS_23_02
             {
                 try
                 {
-                    using DB.DB_Context dB_Context = new DB_Context();
+                    using DB_Context dB_Context = new DB_Context();
                     dB_Context.Users.Remove(us);
                     dB_Context.SaveChanges();
-                    MessageBox.Show("Успешно!");
                     RunUser();
                 }
                 catch (Exception ex)

@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestForIS_23_02"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="ТЕСТ"
+        MinHeight="600" MinWidth="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition />
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="100*" />
+            <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -53,3 +54,4 @@
         
     </Grid>
 </Window>
+<!--// track-->

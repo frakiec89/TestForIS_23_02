@@ -1,4 +1,4 @@
-﻿
+﻿// track
 using Microsoft.EntityFrameworkCore;
 
 namespace TestForIS_23_02.DB
@@ -15,8 +15,6 @@ namespace TestForIS_23_02.DB
             optionsBuilder.UseSqlite("FileName=Test.db");
         }
         public DbSet<User> Users { get; set; }
-
-
       
     }
 }
